@@ -1,18 +1,17 @@
 const ingredients = [
-  'Potatoes',
-  'Mushrooms',
-  'Garlic',
-  'Tomatos',
-  'Herbs',
-  'Condiments',
+  "Potatoes",
+  "Mushrooms",
+  "Garlic",
+  "Tomatos",
+  "Herbs",
+  "Condiments",
 ];
 
 const findUl = document.querySelector("#ingredients");
-
 
 const task = ingredients.forEach((ingredient) => {
   let ingredientList = document.createElement("li");
   ingredientList.textContent = ingredient;
   ingredientList.classList.add("item");
   findUl.append(ingredientList);
-})
+});
